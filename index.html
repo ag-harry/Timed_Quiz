@@ -1,39 +1,106 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css"> 
-    <title>Coding Quiz!</title>
-
-
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <title>Coding Quiz</title>
 </head>
+
 <body>
+    <header>
+        <div class="socreboard-button">
+            <button id="view-score" type="button">Scoreboard</button>
+        </div>
+        <div>
+            <p class="countdown">Remaining: 60 sec</p>
+        </div>
+    </header>
 
-    <div class="container">
-        <h1>Coding Quiz!</h1>
-        <br>
-        <p> Welcome Message</p>
+    <main>
+        <section id="start-card">
+            <div>
+                <h1>Coding Challenge</h1>
+                <p>Welcome! Test your knowledge in Javascript with this incredibly difficult coding quiz.
 
-        <button id="startBtn"> Start Quiz </button>
-    </div>
+                    !Take at your own Risk!
+                </p>
+                <button id="start-button">Start Quiz</button>
+            </div>
+        </section>
+
+        <section id="questions-card">
+            <h2 class="question-title" id="question">
+            </h2>
+            <!-- list of answer choices  -->
+            <li class="questions_li">
+                <button id="a" value="0" type="button" class="answer-button">
+                    Answer-1
+                </button>
+            </li>
+            <li class="questions_li">
+                <button id="b" value="1" type="button" class="answer-button">
+                    Answer-2
+                </button>
+            </li>
+            <li class="questions_li">
+                <button id="c" value="2" type="button" class="answer-button">
+                    Answer-3
+                </button>
+            </li>
+            <li class="questions_li">
+                <button id="d" value="3" type="button" class="answer-button">
+                    Answer-4
+                </button>
+            </li>
+            <!-- this div holds the correct or wrong pop up text once you select the answer -->
+            <div id="correct-wrong">
+            </div>
+        </section>
 
 
-<div class="questions">
-    <h1>quetion_title</h1>
+        <!--section to show final score-->
+        <section id="final-score">
 
-    <ul> 
-        <li class="qstOne">Question 1</li>
-        <li>Question 2</li>
-        <li>Question 3</li>
-        <li>Question 4</li>
-    </ul>
+            <div class="complete">
+                <!-- quiz complete text will show once all question is been answered -->
+                <h1>Complete!</h1>
+                <!-- shows the total score -->
+                <p>Your final score is: <span id="score">0</span></p>
+                <!-- gives a text area to insert your initials -->
+                <p>
+                    Your initials:
+                    <span>
+                        <input placeholder=" Your initials" id="initials" class="span_submit" /></span>
+                    <!-- once type initial and click the submit button it locally stores your score and initials -->
+                    <button id="submit-score">Submit</button>
+                </p>
+            </div>
+        </section>
 
-</div>  
+
+        <!--this section holds the score list-->
+        <section id="high-score">
+
+            <!-- shows score list from highest to lowest with your initials -->
+            <h1 class="complete_quiz">Score List</h1>
+            <ol class="score-list"></ol>
+            <!-- button to go back to home -->
+            <button id="back" class="go-back-btn btn_style_main">
+                Go Back
+            </button>
+            <!-- button to clear the stored score list and initials -->
+            <button id="clear" class="clear-scores-btn btn_style_main">
+                Clear All Scores
+            </button>
+
+        </section>
 
 
-
-   <script src="./assets/js/script.js"> </script>
-
+    </main>
+    <script src='./Assets/js/script.js'></script>
 </body>
+
 </html>
