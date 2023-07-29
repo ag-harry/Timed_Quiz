@@ -40,4 +40,4 @@ Before contributing, please ensure your code adheres to our styling conventions 
 ## Screenshots
 ![Start Quiz](./preview_Images/01_startQuiz.png)
 ![Questions](./preview_Images/02_questions.png)
-![High Scores](./preview_Images/03_highScores.png)
+![High Scores](./preview_Images/03_scoreList.png)
