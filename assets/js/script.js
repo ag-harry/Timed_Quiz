@@ -30,22 +30,22 @@ const questions = [
   {
     question: 'Q1: How do you declare a variable in JavaScript?',
     answers: ['a: int myVariable = 5', 'b: var myVariable = 5', 'c: myVariable := 5', 'd: let myVariable = 5'],
-    correctAnswer: '1'
+    correctAnswer: '2'
   },
   {
     question: 'Q2: What does the "this" keyword refer to in JavaScript?',
     answers: ['a: The current function', 'b: The current object', 'c: The global object', 'd: The parent object'],
-    correctAnswer: '1'
+    correctAnswer: '2'
   },
   {
     question: 'Q3: What are JavaScript data types?',
     answers: ['a: Number, String, Object', 'b: Boolean, Array, Object', 'c: Undefined, Null, Symbol', 'd: All of the above'],
-    correctAnswer: '3'
+    correctAnswer: '0'
   },
   {
     question: 'Q4: Which function is used to parse a string to an integer?',
     answers: ['a: parseInt()', 'b: Number()', 'c: toInteger()', 'd: Parse()'],
-    correctAnswer: '2'
+    correctAnswer: '3'
   },
   {
     question: 'Q5: What does JSON stand for in JavaScript?',
